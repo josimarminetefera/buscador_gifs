@@ -3,7 +3,6 @@ import 'package:share/share.dart';
 import 'package:flutter_masked_text/flutter_masked_text.dart';
 
 class GifPage extends StatelessWidget {
-
   final Map _gifDados;
 
   GifPage(this._gifDados);
@@ -17,7 +16,7 @@ class GifPage extends StatelessWidget {
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.share),
-            onPressed: (){
+            onPressed: () {
               //comando para conpartilhar o gif
               Share.share(_gifDados["images"]["fixed_height"]["url"]);
             },
